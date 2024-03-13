@@ -1,0 +1,108 @@
+@dc:title "Example Description"
+@dc:creator "Example Company"
+@dc:rights "Copyright 2019, by Example Company"
+description <http://opencaesar.io/kpdm-catapult/description/description1#> as description1 {
+	
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://bipm.org/jcgm/vim4#> as vim4
+	
+	uses <http://imce.jpl.nasa.gov/foundation/base#> as base
+	
+	uses <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary1#> as vocabulary1
+	
+	//
+	//
+	// catapult
+	//
+	//
+	
+	instance catapult : vocabulary1:Catapult, vim4:Object [
+		base:contains arm
+	]
+	
+	//
+	// catapult quantities
+	//
+	
+	instance projectile_lever_length : vocabulary1:LengthQuantity [
+		vim4:characterizes catapult
+	]
+	
+	instance force_applied_lever_length : vocabulary1:LengthQuantity [
+		vim4:characterizes catapult
+	]
+	
+	instance tmp_setup : vocabulary1:LengthQuantity [
+		vim4:characterizes catapult
+	]
+	
+	instance stretch_length : vocabulary1:LengthQuantity [
+		vim4:characterizes catapult
+	]
+	
+	instance band_length : vocabulary1:LengthQuantity [
+		vim4:characterizes catapult
+	]
+	
+	instance arm_width : vocabulary1:LengthQuantity [
+		vim4:characterizes catapult
+	]
+	
+	instance arm_depth : vocabulary1:LengthQuantity [
+		vim4:characterizes catapult
+	]
+	
+	instance cup_radius : vocabulary1:LengthQuantity [
+		vim4:characterizes catapult
+	]
+	
+	instance arm_length : vocabulary1:LengthQuantity [
+		vim4:characterizes catapult
+	]
+	
+	//
+	//
+	// arm
+	//
+	//
+	
+	instance arm : vocabulary1:Arm, vim4:Object
+	
+	//
+	// arm quantities
+	//
+	
+	instance xsec_area : vocabulary1:AreaQuantity [
+		vim4:characterizes arm
+	]
+	
+	instance inertia_arm : vocabulary1:MomentOfInertiaQuantity [
+		vim4:characterizes arm
+	]
+	
+	instance mass_arm : vocabulary1:MassQuantity [
+		vim4:characterizes arm
+	]
+	
+	//
+	//
+	// ball
+	//
+	//
+	
+	instance ball : vocabulary1:Ball, vim4:Object
+	
+	//
+	// ball quantities
+	//
+	
+	instance mass_ball : vocabulary1:MassQuantity [
+		vim4:characterizes arm
+	]
+	
+	instance sphere_geometry : vocabulary1:LengthQuantity [
+		vim4:characterizes arm
+	]
+	
+}

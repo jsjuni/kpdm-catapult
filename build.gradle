@@ -1,8 +1,8 @@
 /* 
  * The Maven coordinates for the project artifact
  */
-ext.title = "OML 2.x Template"
-description='The OML template project'
+ext.title = "KPDM Catapult"
+description='KPDM Catapult'
 group = 'io.opencaesar.ontologies'
 version = '1.0.0'
 
@@ -37,9 +37,10 @@ buildscript {
  */
 ext {
     // Name of dataset (matches one used in .fuseki.ttl file)
-    dataset = 'oml-template'
+    dataset = 'kpdm-catapult'
     // Root ontology IRI of the dataset
-    rootIri = 'http://opencaesar.io/template/description/bundle'
+//    rootIri = 'http://opencaesar.io/kpdm-catapult/description/as-designed-bundle'
+    rootIri = 'http://opencaesar.io/kpdm-catapult/description/as-manufactured-bundle'
 }
 
 /*
@@ -55,6 +56,8 @@ repositories {
  */
 dependencies {
     oml "io.opencaesar.ontologies:core-vocabularies:5.+"
+    oml "io.opencaesar.ontologies:imce-vocabularies:5.+"
+    oml "io.opencaesar.ontologies:metrology-vocabularies:7.0+"
 }
 
 /*

@@ -1,0 +1,97 @@
+@dc:title "Example Description"
+@dc:creator "Example Company"
+@dc:rights "Copyright 2019, by Example Company"
+description <http://opencaesar.io/kpdm-catapult/description/as-designed#> as as-designed {
+	
+	uses <http://www.w3.org/2001/XMLSchema#> as xsd
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://bipm.org/jcgm/vim4#> as vim4
+	
+	uses <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary1#> as vocabulary1
+	
+	extends <http://opencaesar.io/kpdm-catapult/description/description1#> as description1
+	
+	//
+	// catapult quantity values
+	//
+	
+	instance projectile_lever_length_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:projectile_lever_length
+		vim4:hasDoubleNumber "0.296228"^^xsd:double
+	]
+	
+	instance force_applied_lever_length_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:force_applied_lever_length
+		vim4:hasDoubleNumber "0.200977"^^xsd:double
+	]
+	
+	instance tmp_setup_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:tmp_setup
+		vim4:hasDoubleNumber "0.281773"^^xsd:double
+	]
+	
+	instance stretch_length_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:stretch_length
+		vim4:hasDoubleNumber "0.421886"^^xsd:double
+	]
+	
+	instance band_length_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:band_length
+		vim4:hasDoubleNumber "0.140113"^^xsd:double
+	]
+	
+	instance arm_width_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:arm_width	
+		vim4:hasDoubleNumber "0.018542"^^xsd:double
+	]
+	
+	instance arm_depth_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:arm_depth	
+		vim4:hasDoubleNumber "0.026668"^^xsd:double
+	]
+	
+	instance cup_radius_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:cup_radius	
+		vim4:hasDoubleNumber "0.019050"^^xsd:double
+	]
+	
+	instance arm_length_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:arm_length
+		vim4:hasDoubleNumber "0.334433"^^xsd:double
+	]
+	
+	//
+	// arm quantity values
+	//
+	
+	instance inertia_arm_value : vocabulary1:KilogramMetreSquaredValue [
+		vim4:isAttributedTo description1:inertia_arm
+		vim4:hasDoubleNumber "0.001904"^^xsd:double
+	]
+	
+	instance mass_arm_value : vocabulary1:KilogramValue [
+		vim4:isAttributedTo description1:mass_arm
+		vim4:hasDoubleNumber "0.17100002786332283"^^xsd:double
+	]
+	
+	instance xsec_area_value : vocabulary1:SquareMetreValue [
+		vim4:isAttributedTo description1:xsec_area
+		vim4:hasDoubleNumber "0.000475"^^xsd:double
+	]
+	
+	//
+	// ball quantity values
+	//
+	
+	instance mass_ball_value : vocabulary1:KilogramValue [
+		vim4:isAttributedTo description1:mass_ball
+		vim4:hasDoubleNumber "0.245622"^^xsd:double
+	]
+	
+	instance sphere_geometry_value : vocabulary1:MetreValue [
+		vim4:isAttributedTo description1:sphere_geometry
+		vim4:hasDoubleNumber "0.02002"^^xsd:double
+	]
+	
+}
