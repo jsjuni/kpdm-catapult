@@ -51,7 +51,7 @@ description <http://opencaesar.io/kpdm-catapult/description/as-manufactured#> as
 		vim4:hasDoubleNumber "0.026668"^^xsd:double
 	]
 	
-	instance cup_radius_value : vocabulary1:KilogramValue [
+	instance cup_radius_value : vocabulary1:MetreValue [
 		vim4:isAttributedTo description1:cup_radius	
 		vim4:hasDoubleNumber "0.019050"^^xsd:double
 	]
