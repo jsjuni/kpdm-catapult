@@ -1,8 +1,10 @@
 @dc:title "Example Description"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
+@rdfs:label "as manufactured"
 description <http://opencaesar.io/kpdm-catapult/description/as-manufactured#> as as-manufactured {
 	
+	uses <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 	uses <http://www.w3.org/2001/XMLSchema#> as xsd
 	uses <http://purl.org/dc/elements/1.1/> as dc
 

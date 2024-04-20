@@ -1,10 +1,31 @@
+PREFIX rdfs:                       <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX base:                       <http://imce.jpl.nasa.gov/foundation/base#>
 PREFIX mission:                    <http://imce.jpl.nasa.gov/foundation/mission#>
+PREFIX vim4:                       <http://bipm.org/jcgm/vim4#>
 PREFIX kpdm-catapult-vocabulary:   <http://opencaesar.io/template/vocabulary/vocabulary#>
 
-SELECT ?c_name
+SELECT ?c_name ?q_name ?q_kind ?context ?q_value_number ?q_value_unit
 
 WHERE {
-	?c_iri a mission:Component ;
-		base:hasCanonicalName ?c_name .
+
+	# quantities and components
+	
+	?q_iri a vim4:IndividualUnitaryQuantity ;
+		base:hasCanonicalName ?q_name ;
+		vim4:instantiates [
+			vim4:id ?q_kind
+		] ;
+		vim4:characterizes [
+			a mission:Component ;
+			base:hasCanonicalName ?c_name
+		] .
+		
+	# quantity values in context
+	
+	?g rdfs:label ?context .
+	graph ?g {
+		?q_value vim4:isAttributedTo ?q_iri ;
+			vim4:hasDoubleNumber ?q_value_number .
+	}
+	?q_value vim4:unit [ vim4:id ?q_value_unit ] .
 }
