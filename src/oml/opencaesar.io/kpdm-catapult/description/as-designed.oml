@@ -8,56 +8,56 @@ description <http://opencaesar.io/kpdm-catapult/description/as-designed#> as as-
 
 	uses <http://bipm.org/jcgm/vim4#> as vim4
 	
-	uses <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary1#> as vocabulary1
+	uses <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary#> as kpdm-catapult-vocabulary
 	
-	extends <http://opencaesar.io/kpdm-catapult/description/description1#> as description1
+	extends <http://opencaesar.io/kpdm-catapult/description/baseline#> as baseline
 	
 	//
 	// catapult quantity values
 	//
 	
-	instance projectile_lever_length_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:projectile_lever_length
+	instance projectile_lever_length_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:projectile_lever_length
 		vim4:hasDoubleNumber "0.296228"^^xsd:double
 	]
 	
-	instance force_applied_lever_length_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:force_applied_lever_length
+	instance force_applied_lever_length_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:force_applied_lever_length
 		vim4:hasDoubleNumber "0.200977"^^xsd:double
 	]
 	
-	instance tmp_setup_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:tmp_setup
+	instance tmp_setup_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:tmp_setup
 		vim4:hasDoubleNumber "0.281773"^^xsd:double
 	]
 	
-	instance stretch_length_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:stretch_length
+	instance stretch_length_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:stretch_length
 		vim4:hasDoubleNumber "0.421886"^^xsd:double
 	]
 	
-	instance band_length_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:band_length
+	instance band_length_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:band_length
 		vim4:hasDoubleNumber "0.140113"^^xsd:double
 	]
 	
-	instance arm_width_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:arm_width	
+	instance arm_width_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:arm_width	
 		vim4:hasDoubleNumber "0.018542"^^xsd:double
 	]
 	
-	instance arm_depth_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:arm_depth	
+	instance arm_depth_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:arm_depth	
 		vim4:hasDoubleNumber "0.026668"^^xsd:double
 	]
 	
-	instance cup_radius_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:cup_radius	
+	instance cup_radius_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:cup_radius	
 		vim4:hasDoubleNumber "0.019050"^^xsd:double
 	]
 	
-	instance arm_length_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:arm_length
+	instance arm_length_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:arm_length
 		vim4:hasDoubleNumber "0.334433"^^xsd:double
 	]
 	
@@ -65,18 +65,18 @@ description <http://opencaesar.io/kpdm-catapult/description/as-designed#> as as-
 	// arm quantity values
 	//
 	
-	instance inertia_arm_value : vocabulary1:KilogramMetreSquaredValue [
-		vim4:isAttributedTo description1:inertia_arm
+	instance inertia_arm_value : kpdm-catapult-vocabulary:KilogramMetreSquaredValue [
+		vim4:isAttributedTo baseline:inertia_arm
 		vim4:hasDoubleNumber "0.001904"^^xsd:double
 	]
 	
-	instance mass_arm_value : vocabulary1:KilogramValue [
-		vim4:isAttributedTo description1:mass_arm
+	instance mass_arm_value : kpdm-catapult-vocabulary:KilogramValue [
+		vim4:isAttributedTo baseline:mass_arm
 		vim4:hasDoubleNumber "0.17100002786332283"^^xsd:double
 	]
 	
-	instance xsec_area_value : vocabulary1:SquareMetreValue [
-		vim4:isAttributedTo description1:xsec_area
+	instance xsec_area_value : kpdm-catapult-vocabulary:SquareMetreValue [
+		vim4:isAttributedTo baseline:xsec_area
 		vim4:hasDoubleNumber "0.000475"^^xsd:double
 	]
 	
@@ -84,13 +84,13 @@ description <http://opencaesar.io/kpdm-catapult/description/as-designed#> as as-
 	// ball quantity values
 	//
 	
-	instance mass_ball_value : vocabulary1:KilogramValue [
-		vim4:isAttributedTo description1:mass_ball
+	instance mass_ball_value : kpdm-catapult-vocabulary:KilogramValue [
+		vim4:isAttributedTo baseline:mass_ball
 		vim4:hasDoubleNumber "0.245622"^^xsd:double
 	]
 	
-	instance sphere_geometry_value : vocabulary1:MetreValue [
-		vim4:isAttributedTo description1:sphere_geometry
+	instance sphere_geometry_value : kpdm-catapult-vocabulary:MetreValue [
+		vim4:isAttributedTo baseline:sphere_geometry
 		vim4:hasDoubleNumber "0.02002"^^xsd:double
 	]
 	

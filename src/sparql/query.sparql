@@ -1,7 +1,10 @@
-PREFIX vocabulary1:   <http://opencaesar.io/template/vocabulary/vocabulary1#>
+PREFIX base:                       <http://imce.jpl.nasa.gov/foundation/base#>
+PREFIX mission:                    <http://imce.jpl.nasa.gov/foundation/mission#>
+PREFIX kpdm-catapult-vocabulary:   <http://opencaesar.io/template/vocabulary/vocabulary#>
 
-SELECT ?x ?y
+SELECT ?c_name
 
 WHERE {
-	?x vocabulary1:r ?y
+	?c_iri a mission:Component ;
+		base:hasCanonicalName ?c_name .
 }

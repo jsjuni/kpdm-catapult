@@ -1,7 +1,7 @@
 @dc:title "Example Vocabulary"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
-vocabulary <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary1#> as vocabulary1 {
+vocabulary <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary#> as kpdm-vocabulary-vocabulary {
 	
 	extends <http://purl.org/dc/elements/1.1/> as dc
 	extends <http://bipm.org/jcgm/vim4#> as vim4
@@ -22,38 +22,38 @@ vocabulary <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary1#> as vocab
 	
 	concept Ball < mission:Component
 	
-	concept LengthQuantity < vim4:InherentUnitaryQuantity [
+	concept LengthQuantity < vim4:InherentUnitaryQuantity, base:IdentifiedElement [
 		restricts vim4:instantiates to iso-80000-3.1:length
 	]
 	
-	concept AreaQuantity < vim4:InherentUnitaryQuantity [
+	concept AreaQuantity < vim4:InherentUnitaryQuantity, base:IdentifiedElement [
 		restricts vim4:instantiates to iso-80000-3.3:area
 	]
 	
-	concept MassQuantity < vim4:InherentUnitaryQuantity [
+	concept MassQuantity < vim4:InherentUnitaryQuantity, base:IdentifiedElement [
 		restricts vim4:instantiates to iso-80000-4.1:mass
 	]
 	
-	concept MomentOfInertiaQuantity < vim4:InherentUnitaryQuantity [
+	concept MomentOfInertiaQuantity < vim4:InherentUnitaryQuantity, base:IdentifiedElement [
 		restricts vim4:instantiates to iso-80000-4.7:moment_of_inertia
 	]
 	
-	concept MetreValue < vim4:UnitaryQuantityValue [
+	concept MetreValue < vim4:UnitaryQuantityValue, base:IdentifiedElement [
 		restricts all vim4:isAttributedTo to LengthQuantity
 		restricts vim4:unit to iso-80000-3.1:metre
 	]
 	
-	concept SquareMetreValue < vim4:UnitaryQuantityValue [
+	concept SquareMetreValue < vim4:UnitaryQuantityValue, base:IdentifiedElement [
 		restricts all vim4:isAttributedTo to AreaQuantity
 		restricts vim4:unit to iso-80000-3.3:square_metre
 	]
 	
-	concept KilogramValue < vim4:UnitaryQuantityValue [
+	concept KilogramValue < vim4:UnitaryQuantityValue, base:IdentifiedElement [
 		restricts all vim4:isAttributedTo to MassQuantity
 		restricts vim4:unit to iso-80000-4.1:kilogram
 	]
 	
-	concept KilogramMetreSquaredValue < vim4:UnitaryQuantityValue [
+	concept KilogramMetreSquaredValue < vim4:UnitaryQuantityValue, base:IdentifiedElement [
 		restricts all vim4:isAttributedTo to MomentOfInertiaQuantity
 		restricts vim4:unit to iso-80000-4.7:kilogram-metre-squared
 	]

@@ -5,6 +5,6 @@ vocabulary bundle <http://opencaesar.io/kpdm-catapult/vocabulary/bundle#> as voc
 		
 	includes <http://purl.org/dc/elements/1.1/> as dc	
 
-	includes <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary1#>
+	includes <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary#>
 
 }

@@ -7,6 +7,6 @@ description bundle <http://opencaesar.io/kpdm-catapult/description/bundle#> as d
 
 	uses <http://opencaesar.io/kpdm-catapult/vocabulary/bundle#>
 	
-	includes <http://opencaesar.io/kpdm-catapult/description/description1#>
+	includes <http://opencaesar.io/kpdm-catapult/description/baseline#>
 
 }

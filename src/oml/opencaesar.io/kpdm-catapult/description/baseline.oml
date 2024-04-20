@@ -1,0 +1,128 @@
+@dc:title "Example Description"
+@dc:creator "Example Company"
+@dc:rights "Copyright 2019, by Example Company"
+description <http://opencaesar.io/kpdm-catapult/description/baseline#> as baseline {
+	
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://bipm.org/jcgm/vim4#> as vim4
+	
+	uses <http://imce.jpl.nasa.gov/foundation/base#> as base
+	
+	uses <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary#> as kpdm-catapult-vocabulary
+	
+	//
+	//
+	// catapult
+	//
+	//
+	
+	instance catapult : kpdm-catapult-vocabulary:Catapult, vim4:Object [
+		base:hasCanonicalName "catapult"
+		base:contains arm
+	]
+	
+	//
+	// catapult quantities
+	//
+	
+	instance projectile_lever_length : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "catapult projectile lever length"
+		vim4:characterizes catapult
+		
+	]
+	
+	instance force_applied_lever_length : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "catapult force applied lever length"
+		vim4:characterizes catapult
+	]
+	
+	instance tmp_setup : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "catapult tmp_setup"
+		vim4:characterizes catapult
+	]
+	
+	instance stretch_length : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "catapult stretch limit"
+		vim4:characterizes catapult
+	]
+	
+	instance band_length : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "catapult band length"
+		vim4:characterizes catapult
+	]
+	
+	instance arm_width : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "catapult arm width"
+		vim4:characterizes catapult
+	]
+	
+	instance arm_depth : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "catapult arm depth"
+		vim4:characterizes catapult
+	]
+	
+	instance cup_radius : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "catapult cup radius"
+		vim4:characterizes catapult
+	]
+	
+	instance arm_length : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "catapult arm length"
+		vim4:characterizes catapult
+	]
+	
+	//
+	//
+	// arm
+	//
+	//
+	
+	instance arm : kpdm-catapult-vocabulary:Arm, vim4:Object [
+		base:hasCanonicalName "arm"
+	]
+	
+	//
+	// arm quantities
+	//
+	
+	instance xsec_area : kpdm-catapult-vocabulary:AreaQuantity [
+		base:hasCanonicalName "arm cross-sectional area"
+		vim4:characterizes arm
+	]
+	
+	instance inertia_arm : kpdm-catapult-vocabulary:MomentOfInertiaQuantity [
+		base:hasCanonicalName "arm inertia"
+		vim4:characterizes arm
+	]
+	
+	instance mass_arm : kpdm-catapult-vocabulary:MassQuantity [
+		base:hasCanonicalName "arm mass"
+		vim4:characterizes arm
+	]
+	
+	//
+	//
+	// ball
+	//
+	//
+	
+	instance ball : kpdm-catapult-vocabulary:Ball, vim4:Object [
+		base:hasCanonicalName "ball"
+	]
+	
+	//
+	// ball quantities
+	//
+	
+	instance mass_ball : kpdm-catapult-vocabulary:MassQuantity [
+		base:hasCanonicalName "ball mass"
+		vim4:characterizes arm
+	]
+	
+	instance sphere_geometry : kpdm-catapult-vocabulary:LengthQuantity [
+		base:hasCanonicalName "ball sphere geometry"
+		vim4:characterizes arm
+	]
+	
+}
