@@ -1,0 +1,10 @@
+PREFIX owl:                        <http://www.w3.org/2002/07/owl#>
+
+SELECT ?o_importing ?o_imported
+
+WHERE {
+
+	?o_importing a owl:Ontology ;
+		owl:imports ?o_imported .
+		
+}

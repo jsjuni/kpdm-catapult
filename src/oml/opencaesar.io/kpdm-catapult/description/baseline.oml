@@ -1,4 +1,4 @@
-@dc:title "Baseline Description"
+@dc:title "KPDM Catapult Baseline Description"
 @dc:creator "J S Jenkins"
 @rdfs:label "baseline"
 description <http://opencaesar.io/kpdm-catapult/description/baseline#> as baseline {
