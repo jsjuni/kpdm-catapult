@@ -1,6 +1,5 @@
-@dc:title "Example Vocabulary Bundle"
-@dc:creator "Example Company"
-@dc:rights "Copyright 2019, by Example Company"
+@dc:title "KPDM Vocabulary Bundle"
+@dc:creator "J S Jenkins"
 vocabulary bundle <http://opencaesar.io/kpdm-catapult/vocabulary/bundle#> as vocabulary-bundle {
 		
 	includes <http://purl.org/dc/elements/1.1/> as dc	

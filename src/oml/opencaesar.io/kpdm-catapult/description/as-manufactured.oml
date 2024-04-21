@@ -1,6 +1,5 @@
-@dc:title "Example Description"
-@dc:creator "Example Company"
-@dc:rights "Copyright 2019, by Example Company"
+@dc:title "KPDM Catapult As-Manufactured Description"
+@dc:creator "J S Jenkins"
 @rdfs:label "as manufactured"
 description <http://opencaesar.io/kpdm-catapult/description/as-manufactured#> as as-manufactured {
 	

@@ -1,6 +1,5 @@
-@dc:title "Example Description Bundle"
-@dc:creator "Example Company"
-@dc:rights "Copyright 2019, by Example Company"
+@dc:title "KPDM Catapult As-Manufactured Description Bundle"
+@dc:creator "J S Jenkins"
 description bundle <http://opencaesar.io/kpdm-catapult/description/as-manufactured-bundle#> as as-manufactured-description-bundle {
 	
 	uses <http://purl.org/dc/elements/1.1/> as dc	

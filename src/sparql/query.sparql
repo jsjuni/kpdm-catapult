@@ -23,9 +23,10 @@ WHERE {
 	# quantity values in context
 	
 	?g rdfs:label ?context .
-	graph ?g {
+	GRAPH ?g {
 		?q_value vim4:isAttributedTo ?q_iri ;
 			vim4:hasDoubleNumber ?q_value_number .
 	}
 	?q_value vim4:unit [ vim4:id ?q_value_unit ] .
 }
+ORDER BY ?c_name ?q_name ?q_kind ?context

@@ -1,9 +1,11 @@
-@dc:title "Example Vocabulary"
-@dc:creator "Example Company"
-@dc:rights "Copyright 2019, by Example Company"
+@dc:title "KPDM Catapult Vocabulary"
+@dc:creator "J S Jenkins"
+@rdfs:label "vocabulary"
 vocabulary <http://opencaesar.io/kpdm-catapult/vocabulary/vocabulary#> as kpdm-vocabulary-vocabulary {
 	
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 	extends <http://purl.org/dc/elements/1.1/> as dc
+	
 	extends <http://bipm.org/jcgm/vim4#> as vim4
 	
 	extends <http://imce.jpl.nasa.gov/foundation/base#> as base

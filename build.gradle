@@ -40,7 +40,7 @@ ext {
     dataset = 'kpdm-catapult'
     // Root ontology IRI of the dataset
 //    rootIri = 'http://opencaesar.io/kpdm-catapult/description/as-designed-bundle'
-    rootIri = 'http://opencaesar.io/kpdm-catapult/description/as-manufactured-bundle'
+    rootIri = 'http://opencaesar.io/kpdm-catapult/description/bundle'
 }
 
 /*
@@ -160,6 +160,7 @@ task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn:
     endpointURL = "http://localhost:3030/$dataset".toString()
     queryPath = file('src/sparql')
     resultPath = file('build/frames')
+    format = 'tsv'
 }
 
 /*
