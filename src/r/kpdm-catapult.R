@@ -1,5 +1,6 @@
 library(dplyr)
 library(igraph)
+library(assertthat)
 
 ontology_tag <- c(Vocabulary = "V", VocabularyBundle = "VB", Description = "D", DescriptionBundle = "DB")
 
@@ -22,6 +23,7 @@ imports_edges <- apply(X = ontology_imports, MARGIN = 2, FUN = function(c) name_
   as.matrix(ncol = 2, by_row = TRUE)
 
 og <- graph_from_edgelist(imports_edges)
+assert_that(is_dag(og), msg = "imports graph is not a directed acyclic graph")
 
 dot <- file("build/dot/ontology-graph.dot", open = "w")
 
