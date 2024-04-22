@@ -1,0 +1,36 @@
+---
+title: "KPDM Catapult"
+author: "J S Jenkins"
+format: html
+editor: visual
+---
+
+# KPDM Catapult Model
+
+## Model Structure
+
+![Ontology Imports Graph](images/ontology-graph.svg)
+
+Verified to be a directed acyclic graph.
+
+## Key Ontologies
+
+-   **KPDM Catapult Vocabulary** Defines specializations of IMCE Mission:Component and various VIM4 concepts for modeling the catapult and its quantities.
+
+-   **KPDM Catapult Vocabulary Bundle** Closes the catapult vocabulary.
+
+-   **KPDM Catapult Baseline Description** Instantiates the catapult and its quantities.
+
+-   **KPDM Catapult As-Designed Description** Assigns as-designed values to catapult quantities.
+
+-   **KPDM Catapult As-Manufactured Description** Assigns as-manufactured values to catapult quantities.
+
+-   **KPDM Catapult Description Bundle** Bundles all descriptions for analysis. Note that the as-designed and as-manufactured descriptions are distinguishable and analysis may specify either or both.
+
+## Quantities Query
+
+```{r echo = FALSE}
+qvt <- read.delim("../../build/tsv/quantity-values.tsv") |>
+  setNames(c('component', 'quantity', 'quantity kind', 'context', 'number', 'unit'))
+knitr::kable(qvt)
+```

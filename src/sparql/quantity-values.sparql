@@ -4,7 +4,7 @@ PREFIX mission:                    <http://imce.jpl.nasa.gov/foundation/mission#
 PREFIX vim4:                       <http://bipm.org/jcgm/vim4#>
 PREFIX kpdm-catapult-vocabulary:   <http://opencaesar.io/template/vocabulary/vocabulary#>
 
-SELECT ?c_name ?q_name ?q_kind ?context ?q_value_number ?q_value_unit
+SELECT ?c_name ?q_name ?q_kind ?context (str(?q_value_number_expr) as ?q_value_number) ?q_value_unit
 
 WHERE {
 
@@ -25,7 +25,7 @@ WHERE {
 	?g rdfs:label ?context .
 	GRAPH ?g {
 		?q_value vim4:isAttributedTo ?q_iri ;
-			vim4:hasDoubleNumber ?q_value_number .
+			vim4:hasDoubleNumber ?q_value_number_expr .
 	}
 	?q_value vim4:unit [ vim4:id ?q_value_unit ] .
 }

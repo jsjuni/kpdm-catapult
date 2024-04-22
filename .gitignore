@@ -8,3 +8,6 @@ build
 # Fuseki output directory
 .fuseki
 .Rproj.user
+
+src/r/images
+src/r/kpdm-catapult_files
